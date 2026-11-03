@@ -1,5 +1,3 @@
-# Tests in: ../dev/tests/nix-unit.nix (bundlersExample)
-
 { lib
 , flake-parts-lib
 , ...

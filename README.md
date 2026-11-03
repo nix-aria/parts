@@ -49,15 +49,7 @@ baseline level of compatibility: the core attributes that constitute a flake.
 
 # Getting Started
 
-If your project does not have a flake yet:
-
-```console
-nix flake init -t github:hercules-ci/flake-parts
-```
-
-# Migrate
-
-Otherwise, add the input,
+Add the input to your `flake.nix`,
 
 ```nix
     flake-parts.url = "github:hercules-ci/flake-parts";
@@ -79,11 +71,7 @@ then slide `mkFlake` between your outputs function head and body,
     };
 ```
 
-Now you can add the remaining module attributes like in the [the template](./template/default/flake.nix).
-
-# Templates
-
-See [the template](./template/default/flake.nix).
+Add system-specific outputs using `perSystem`, and other outputs using `flake`.
 
 # Examples
 

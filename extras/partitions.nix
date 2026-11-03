@@ -109,7 +109,6 @@ in
       example = {
         "devShells" = "dev";
         "checks" = "dev";
-        "herculesCI" = "dev";
       };
     };
     partitions = mkOption {
