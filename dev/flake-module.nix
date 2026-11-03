@@ -1,4 +1,4 @@
-{ config, lib, inputs, ... }:
+{ inputs, ... }:
 
 {
   imports = [
@@ -24,10 +24,5 @@
       };
     };
 
-  };
-  flake = {
-    # for repl exploration / debug
-    config.config = config;
-    options.mySystem = lib.mkOption { default = config.allSystems.${builtins.currentSystem}; };
   };
 }

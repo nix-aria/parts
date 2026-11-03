@@ -19,7 +19,6 @@
       builtinModules = {
         apps = ./modules/apps.nix;
         checks = ./modules/checks.nix;
-        debug = ./modules/debug.nix;
         devShells = ./modules/devShells.nix;
         flake = ./modules/flake.nix;
         formatter = ./modules/formatter.nix;
