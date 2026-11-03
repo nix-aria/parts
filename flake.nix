@@ -45,13 +45,6 @@
     in
     lib.mkFlake { inherit inputs; } {
       systems = [ ];
-      imports = [ flakeModules.partitions ];
-      partitionedAttrs.checks = "dev";
-      partitionedAttrs.devShells = "dev";
-      partitions.dev.extraInputsFlake = ./dev;
-      partitions.dev.module = {
-        imports = [ ./dev/flake-module.nix ];
-      };
       flake = {
         inherit lib flakeModules;
         modules.flake = flakeModules;
